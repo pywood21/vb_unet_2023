@@ -6,46 +6,44 @@
 
 ### Directory structure
 
-Under the job number (ex. 001), following directory will be generated.
+The original dataset, pairs of image and the correponding mask, for building u-net model should be placed in '_original_pdg' directory. Under the job number (ex. 003), following directory will be generated.The '_test' directory contains the target images to be segmented.
 
 ```
 .
-├── extracted_VB_images
-├── model
-├── morphology
-├── segmentation
-└── train
-  ├── image
-  └── mask
+├── _original_pdg
+├── _run
+│   └── 003
+│       ├── extracted_VB_images
+│       ├── model
+│       ├── morphology
+│       ├── segmentation
+│       └── train
+│           ├── image
+│           │   ├── 0.png
+│           │   ├── 1.png
+│           │   └── 2.png
+│           └── mask
+│               ├── 0.png
+│               ├── 1.png
+│               └── 2.png
+└── _test
 ```
 
-The original dataset, pairs of image and the correponding mask, for building u-net model should be placed in train directory
 
-```
-└── train
-    ├── image
-    │   ├── 0.png
-    │   ├── 1.png
-    │   └── 2.png
-    └── mask
-        ├── 0.png
-        ├── 1.png
-        └── 2.png
-```
 
 ### Jupyter notebook
 
-001: Building u-net model
+001_model_builing.ipynb: Building u-net model
 
-002: Segmentation using u-net model
+002_segment_analysis.ipynb: Segmentation using u-net model
 
-003: Measurement of morphological parameters
+003_morphometry.ipynb: Measurement of morphological parameters
 
 
 
 ### Flow chart 
 
-<img src="./img/1.png" alt="1" style="zoom:25%;" />
+<img src="/Users/sugiyama/Documents/python/GitHub/Tsuyama/img/1.png" alt="1" style="zoom:25%;" />
 
 ### Data used in the paper
 
