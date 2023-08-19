@@ -43,7 +43,7 @@ The original dataset, pairs of image and the correponding mask, for building u-n
 
 ### Flow chart 
 
-<img src="/Users/sugiyama/Documents/python/GitHub/Tsuyama/img/1.png" alt="1" style="zoom:25%;" />
+<img src="./img/1.png" alt="1" style="zoom:25%;" />
 
 ### Data used in the paper
 
