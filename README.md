@@ -6,7 +6,7 @@
 
 ### Directory structure
 
-The original dataset, pairs of image and the correponding mask, for building u-net model should be placed in '_original_pdg' directory. Under the job number (ex. 003), following directory will be generated.The '_test' directory contains the target images to be segmented.
+The original dataset, pairs of image and the correponding mask, for building u-net model should be placed in '_original_pdg'  directory. Under the job number (ex. 003), following directory will be generated.The 'test' directory contains the target images to be segmented.
 
 ```
 .
@@ -43,7 +43,24 @@ The original dataset, pairs of image and the correponding mask, for building u-n
 
 ### Flow chart 
 
-<img src="./img/1.png" alt="1" style="zoom:25%;" />
+Step 1.
+The original microscopic image and the corresponding mask image are divided into 512x512 pixel images. A set of around 200 images was used as a training dataset, followed by augmentation such as shift, scale, rotate,  The U-net was successfully trained and a model with 98% accuracy was constantly obtained.
+Phase 2
+The actual test microscopic images were divided into image patches, and for each image patch segmentation was performed by U-net. Finally, patches were stitched into a single image again to complete the process.
+
+<img src="./img/1.png" alt="1" style="zoom:80%;" />
+
+Extracted vascular bundles are exemplified in the following images. Those images are sequentially numbered with respect to the from the relative radial distance from the outer surface of the column.
+
+![](/Users/sugiyama/Documents/python/GitHub/vb_unet_2023/img/2.png)
+
+Finally, morphological parameters were obtained using scikit-image package. Typical output was exemplified as follows.
+
+![](/Users/sugiyama/Documents/python/GitHub/vb_unet_2023/img/3.png)
+
+
+
+
 
 ### Data used in the paper
 
