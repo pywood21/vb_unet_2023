@@ -10,7 +10,7 @@ The original dataset, pairs of image and the correponding mask, for building u-n
 
 ```
 .
-├── _original_pdg
+├── _original_png
 ├── _run
 │   └── 003
 │       ├── extracted_VB_images
