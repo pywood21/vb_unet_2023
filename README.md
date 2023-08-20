@@ -52,11 +52,11 @@ The actual test microscopic images were divided into image patches, and for each
 
 Extracted vascular bundles are exemplified in the following images. Those images are sequentially numbered with respect to the from the relative radial distance from the outer surface of the column.
 
-![](/Users/sugiyama/Documents/python/GitHub/vb_unet_2023/img/2.png)
+![](./img/2.png)
 
 Finally, morphological parameters were obtained using scikit-image package. Typical output was exemplified as follows.
 
-![](/Users/sugiyama/Documents/python/GitHub/vb_unet_2023/img/3.png)
+![](./img/3.png)
 
 
 
